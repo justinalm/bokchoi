@@ -93,49 +93,78 @@ a.nav-drawer {
   padding: 3px 0 0 0;
 }
 
-nav.mobile{
+ul.mobile{
   display: none;
   position: absolute;
   z-index: 9999;
-  margin: 45px 0 0 0;
+  margin: 0;
+  padding: 0;
+  top: 0;
   left: 0;
-  height: 90%;
+  height: 101%;
   width: 100%;
 }
 
-nav.mobile > li {
+ul.mobile > li {
+  display: table;
   position: relative;
+  width: 100%;
+  height: 33.333%;
   list-style: none;
   background: rgba(0,0,0,0.85);
   color: rgb(179,179,179);
-  text-align: center;
   text-decoration: none;
-  height: 33.333%;
-  width: 100%;
   border-bottom: 1px solid rgb(80,80,80);
 }
 
-nav.mobile > li a {
+ul.mobile > li:first-child {
   display: block;
-  position: relative;
+  position: absolute;
+  z-index: 100000;
+  top: 0;
+  right: 0;
+  height: auto !important;
+  width: auto !important;
+  list-style: none;
+  background: transparent;
+  border-bottom: none;
+}
+
+ul.mobile > li:first-child > a {
+  display: block;
+  padding: 9px 7px 30px 20px;
   height: 100%;
   width: 100%;
+}
+
+ul.mobile > li:first-child > a:hover {
+  background: transparent;
+}
+
+ul.mobile > li > a {
+  vertical-align: middle;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
   color: rgb(179,179,179);
   text-decoration: none;
+  font-size: 4em;
 }
 
-.link-text {
-  position: absolute;
-  top: -50%;
+ul.mobile > li > a:hover {
+  background: rgb(0,159,137);
 }
 
-nav.desktop {
+ul.desktop {
   display: none;
   float: right;
   margin: 5px 0 0 0;
+  padding: 0;
 }
 
-nav.desktop > li {
+ul.desktop > li {
   display: inline-block;
   list-style: none;
   background: rgba(0,0,0,0.8);
@@ -143,7 +172,7 @@ nav.desktop > li {
   text-decoration: none;
 }
 
-nav.desktop > li a {
+ul.desktop > li > a {
   display: block;
   color: rgb(179,179,179);
   text-decoration: none;
@@ -151,11 +180,11 @@ nav.desktop > li a {
   margin: 0 1em 0 0;
 }
 
-nav.desktop > li a:last-child {
+ul.desktop > li > a:last-child {
   margin: 0;
 }
 
-nav a:hover {
+ul a:hover {
   text-decoration: underline;
 }
 
@@ -209,10 +238,10 @@ footer p {
   a.nav-drawer {
     display: none;
   }
-  nav.mobile {
+  ul.mobile {
     display: none;
   }
-  nav.desktop {
+  ul.desktop {
     display: block;
   }
 }
