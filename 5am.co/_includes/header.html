@@ -4,42 +4,42 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
+        <script type="text/javascript" src="//use.typekit.net/rdo0tos.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="/css/normalize.min.css">
+        <link rel="stylesheet" href="/css/main.css">
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
+    <body id="{{ page.bodyid }}">
     <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
     <header>
       <div class="container">
-        <h1 class="logo-phone">&nbsp;</h1>
+        <a href="/" title="5AM dot co logo"><h1 class="logo-phone">&nbsp;</h1></a>
+        <a href="/" title="5AM dot co logo"><h1 class="logo-tablet-desktop">&nbsp;</h1></a>
         
-        <a class="nav-drawer" title="Hamburger Navigation Icon" href="#"><img class="hires" alt="Ambient background image." src="//:0" data-src="img/nav-button.png" width="26"></a>
+        <a class="nav-drawer" title="Hamburger Navigation Icon" href="#"><img class="hires" alt="Ambient background image." src="//:0" data-src="../img/nav-button.png" width="26"></a>
+
         <ul class="mobile">
-          <!--
-          
-          Commented this out because it wasn’t inline with Shawn’s design. Might open it up again later as a suggestion.
-          
-          <li><a class="nav-drawer" title="Hamburger Navigation Icon" href="#"><img class="hires" alt="Ambient background image." src="//:0" data-src="img/nav-button.png" width="26"></a></li>-->
-          <li><a href="#">Work</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="nav-drawer" title="Hamburger Navigation Icon" href="#"><img class="hires" alt="Ambient background image." src="//:0" data-src="../img/nav-button.png" width="26"></a></li>
+          <li><a href="/" id="work" title="Work">Work</a></li>
+          <li><a href="/about" id="about" title="About">About</a></li>
+          <li><a href="mailto:info@5am.co" title="Contact">Contact</a></li>>
         </ul>
         <ul class="desktop">
-          <li><a href="#">Work</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+          <li><a href="/" id="work" title="Work">Work</a></li>
+          <li><a href="/about" id="about" title="About">About</a></li>
+          <li><a href="mailto:info@5am.co" title="Contact">Contact</a></li>
+        </ul
       </div>
     </header>
 

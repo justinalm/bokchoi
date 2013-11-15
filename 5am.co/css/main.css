@@ -61,7 +61,8 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px "Proxima Nova", Helvetica, Arial;
+    font: 16px/26px "proxima-nova", Helvetica, Arial;
+    font-weight: 300;
 }
 
 .container {
@@ -87,12 +88,16 @@ h1.logo-phone {
   width: 68px;
   background: url(../img/5am-logo-phone.png) no-repeat;
   background-size: 68px 32px;
-  margin: 0;
+  margin: 3px 0 0 0;
+}
+
+h1.logo-tablet-desktop {
+  display: none;
 }
 
 a.nav-drawer {
   float: right;
-  padding: 5px;
+  padding: 4px 2px 5px 5px;
 }
 
 ul.mobile{
@@ -101,9 +106,9 @@ ul.mobile{
   z-index: 9999;
   margin: 0;
   padding: 0;
-  top: 60px;
+  top: 0;
   left: 0;
-  height: 90%;
+  height: 100%;
   width: 100%;
 }
 
@@ -118,11 +123,6 @@ ul.mobile > li {
   text-decoration: none;
   border-bottom: 1px solid rgb(80,80,80);
 }
-
-
-/*
-
-Commented this out because it wasn’t exactly in-line with Shawn’s design. Might open it up again as a suggestion.
 
 ul.mobile > li:first-child {
   display: block;
@@ -139,14 +139,16 @@ ul.mobile > li:first-child {
 
 ul.mobile > li:first-child > a {
   display: block;
-  padding: 9px 7px 30px 20px;
+  padding: 10px 10px 20px 10px;
+  margin: 0 0 5px 5px;
   height: 100%;
   width: 100%;
+  background: rgb(242,242,242);
 }
 
 ul.mobile > li:first-child > a:hover {
   background: transparent;
-}*/
+}
 
 
 ul.mobile > li > a {
@@ -163,39 +165,34 @@ ul.mobile > li > a {
 }
 
 ul.mobile > li > a:hover {
-  background: rgb(0,159,137);
+  background: rgb(229,95,82);
 }
 
 ul.desktop {
   display: none;
-  float: right;
-  margin: 5px 0 0 0;
-  padding: 0;
 }
 
-ul.desktop > li {
-  display: inline-block;
-  list-style: none;
-  background: rgba(0,0,0,0.8);
-  color: rgb(179,179,179);
-  text-decoration: none;
+ul.mobile > li > a:hover,
+ul.desktop > li > a:hover {
+  color: rgb(255,255,255);
+  background: rgb(229,95,82);
 }
 
-ul.desktop > li > a {
-  display: block;
-  color: rgb(179,179,179);
-  text-decoration: none;
-  padding: 0 20px;
-  margin: 0 1em 0 0;
+ul.mobile > li > a:active,
+ul.desktop > li > a:active {
+  color: rgb(30,30,30);
+  background: rgb(242,242,242);
 }
 
-ul.desktop > li > a:last-child {
-  margin: 0;
+/*Active Menu Item Style*/
+body#work ul.mobile > li > a#work,
+body#about ul.mobile > li > a#about,
+body#work ul.desktop > li > a#work,
+body#about ul.desktop > li > a#about {
+color: #fff;
+background: rgb(0,159,137);
 }
 
-ul a:hover {
-  text-decoration: underline;
-}
 
 article {
   padding: 2em 0 1em 0;
@@ -214,6 +211,7 @@ footer {
   background-color: rgb(0,0,0);
   height: 44px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 footer p {
@@ -229,21 +227,41 @@ footer p {
        only screen and (-o-min-device-pixel-ratio: 3/2),
        only screen and (min--moz-device-pixel-ratio: 1.5),
        only screen and (min-device-pixel-ratio: 1.5) {
-         h1.logo-phone {
+        h1.logo-phone {
            background: url(../img/5am-logo-phone@2x.png) no-repeat;
            background-size: 68px 32px;
-         }
-    }
-  }
+        }
+        
+        h1.logo-tablet-desktop {
+            background: url(../img/5am-logo-tablet-desktop@2x.png) no-repeat;
+            background-size: 102px 48px;
+        }
+      }
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
-}
-
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
+  header {
+    height: 80px;
+    padding: 0;
+  }
+  h1.logo-phone {
+    display: none;
+  }
+  h1.logo-tablet-desktop {
+    display: block;
+    float: left;
+    overflow: hidden;
+    color: rgb(255,255,255);
+    text-indent: -9999;
+    height: 48px;
+    width: 102px;
+    background: url(../img/5am-logo-tablet-desktop.png) no-repeat;
+    background-size: 102px 48px;
+    margin: 15px 0 0 15px;
+  }
   a.nav-drawer {
     display: none;
   }
@@ -252,6 +270,31 @@ footer p {
   }
   ul.desktop {
     display: block;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  ul.desktop > li {
+    display: inline-block;
+    list-style: none;
+    background: rgba(0,0,0,0.8);
+    color: rgb(179,179,179);
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul.desktop > li > a {
+    display: block;
+    color: rgb(179,179,179);
+    font-size: 1.25em;
+    text-decoration: none;
+    padding: 27px;
+    margin: 0;
+  }
+
+  ul.desktop > li > a:last-child {
+    margin: 0;
   }
 }
 
