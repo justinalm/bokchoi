@@ -296,6 +296,7 @@ img.selfie {
     padding: 0;
   }
   ul.desktop > li {
+    float: left;
     display: inline-block;
     list-style: none;
     background: rgba(0,0,0,0.8);
