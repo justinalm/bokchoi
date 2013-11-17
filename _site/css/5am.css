@@ -250,6 +250,11 @@ ul.projects > li {
   margin: 0;
 }
 
+.project-info {
+  width: 100%;
+  left: 0;
+}
+
 /* These are the styles for our colourful backgrounds */
 .light-blue-div {
   background: rgb(76, 145, 172);
@@ -380,9 +385,7 @@ ul.projects > li {
 
   .project-info {
     position: absolute;
-    width: 100%;
     top: 35%;
-    left: 0;
   }
 
   /*About Page Styles*/
@@ -421,10 +424,11 @@ ul.projects > li {
 
   ul.projects > li {
     width: 33.3%;
+    height: 320px;
   }
 
   .project-info {
-    top: 35%; 
+    top: 42%; 
   }
   
     /*About Page Styles*/
