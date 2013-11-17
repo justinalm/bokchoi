@@ -65,26 +65,11 @@ body {
     font-weight: 300;
 }
 
-.container-header {
-  display: block;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.container-article {
-  display: block;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 30px 0;
-}
-
 header {
   background-color: rgb(0,0,0);
   color: rgb(255,255,255);
   height: 50px;
-  padding: 10px 20px 0 20px;
+  padding: 8px 10px 0 10px;
 }
 
 h1.logo-phone {
@@ -96,7 +81,6 @@ h1.logo-phone {
   width: 68px;
   background: url(../img/5am-logo-phone.png) no-repeat;
   background-size: 68px 32px;
-  margin: 3px 0 0 0;
 }
 
 h1.logo-tablet-desktop {
@@ -105,7 +89,7 @@ h1.logo-tablet-desktop {
 
 a.nav-drawer {
   float: right;
-  padding: 4px 2px 5px 5px;
+  padding: 3px 2px 5px 5px;
 }
 
 ul.mobile{
@@ -147,7 +131,7 @@ ul.mobile > li:first-child {
 
 ul.mobile > li:first-child > a {
   display: block;
-  padding: 10px 10px 20px 10px;
+  padding: 8px 10px 18px 10px;
   margin: 0 0 5px 5px;
   height: 100%;
   width: 100%;
@@ -206,8 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  padding: 0 20px;
-  margin: 0 0 1em 0;
+  margin: 0;
 }
 
 footer {
@@ -216,11 +199,23 @@ footer {
   height: 44px;
   text-transform: uppercase;
   text-align: center;
+  padding: 10px 0 0 0;
+}
+
+h2.footer-logo {
+  display: none;
+  float: left;
+  overflow: hidden;
+  color: rgb(255,255,255);
+  text-indent: -9999;
+  height: 22px;
+  width: 44px;
+  background: url(../img/5am-logo-footer.png) no-repeat;
+  background-size: 44px 22px;
 }
 
 footer p {
   margin: 0;
-  padding: 10px 0 0 0;
 }
 
 .twitter-icon {
@@ -240,6 +235,39 @@ img.selfie {
   height: 215px;
 }
 
+/* These are the styles for our colourful backgrounds */
+.light-blue-div {
+  background: rgb(76, 145, 172);
+}
+
+.middle-blue-div {
+  background: rgb(38,122,154);
+}
+
+.dark-blue-div {
+  background: rgb(0, 99, 137);
+}
+
+.light-pink-div {
+  background: rgb(197,77,74);
+}
+
+.middle-pink-div {
+  background: rgb(184,56,53);
+}
+
+.dark-pink-div {
+  background: rgb(147,44,43);
+}
+
+.green-div {
+  background-color: rgb(108,171,54);
+}
+
+.pumkin-div {
+  background: rgb(213,110,28);
+}
+
 /* ==========================================================================
   Retina CSS
   ========================================================================== */
@@ -257,6 +285,10 @@ img.selfie {
             background: url(../img/5am-logo-tablet-desktop@2x.png) no-repeat;
             background-size: 102px 48px;
         }
+        h2.footer-logo {
+          background: url(../img/5am-logo-footer@2x.png) no-repeat;
+          background-size: 44px 22px;
+        }
       }
 
 /* ==========================================================================
@@ -268,9 +300,11 @@ img.selfie {
     height: 80px;
     padding: 0;
   }
+
   h1.logo-phone {
     display: none;
   }
+
   h1.logo-tablet-desktop {
     display: block;
     float: left;
@@ -283,18 +317,22 @@ img.selfie {
     background-size: 102px 48px;
     margin: 15px 0 0 15px;
   }
+
   a.nav-drawer {
     display: none;
   }
+
   ul.mobile {
     display: none;
   }
+
   ul.desktop {
     display: block;
     float: right;
     margin: 0;
     padding: 0;
   }
+
   ul.desktop > li {
     float: left;
     display: inline-block;
@@ -318,6 +356,7 @@ img.selfie {
   ul.desktop > li > a:last-child {
     margin: 0;
   }
+
   /*About Page Styles*/
   .about-banner {
     height: 250px;
@@ -328,18 +367,30 @@ img.selfie {
     height: 250px;
     margin: 0 5% 0 0;
   }
+
+  h2.footer-logo {
+    display: block;
+  }
+
+  footer {
+    text-align: right;
+    padding: 10px 20px 0 20px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
   a.nav-drawer {
     display: none;
   }
+
   ul.mobile {
     display: none;
   }
+
   ul.desktop {
     display: block;
   }
+  
     /*About Page Styles*/
   .about-banner {
     height: 350px;
@@ -351,7 +402,7 @@ img.selfie {
   }
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1025px) {
 
 }
 
