@@ -235,6 +235,21 @@ img.selfie {
   height: 215px;
 }
 
+/* Projects List Styling*/
+ul.projects {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.projects > li {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+}
+
 /* These are the styles for our colourful backgrounds */
 .light-blue-div {
   background: rgb(76, 145, 172);
@@ -357,6 +372,19 @@ img.selfie {
     margin: 0;
   }
 
+  ul.projects > li {
+    float: left;
+    width: 50%;
+    height: 191px;
+  }
+
+  .project-info {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    left: 0;
+  }
+
   /*About Page Styles*/
   .about-banner {
     height: 250px;
@@ -390,6 +418,14 @@ img.selfie {
   ul.desktop {
     display: block;
   }
+
+  ul.projects > li {
+    width: 33.3%;
+  }
+
+  .project-info {
+    top: 34%; 
+  }
   
     /*About Page Styles*/
   .about-banner {
@@ -400,10 +436,6 @@ img.selfie {
     height: 350px;
     margin: 0 15% 0 0;
   }
-}
-
-@media only screen and (min-width: 1025px) {
-
 }
 
 /* ==========================================================================
