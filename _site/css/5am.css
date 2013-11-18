@@ -108,7 +108,7 @@ ul.mobile > li {
   display: table;
   position: relative;
   width: 100%;
-  height: 33.3334%;
+  height: 33.3333%;
   list-style: none;
   background: rgba(0,0,0,0.85);
   color: rgb(179,179,179);
@@ -413,6 +413,7 @@ ul.halfer-projects > li:last-child > .project-info-two-liner {
   ul.desktop {
     display: block;
     float: right;
+    width: 50%;
     margin: 0;
     padding: 0;
   }
@@ -420,6 +421,7 @@ ul.halfer-projects > li:last-child > .project-info-two-liner {
   ul.desktop > li {
     float: left;
     display: inline-block;
+    width: 33.3334%;
     list-style: none;
     background: rgba(0,0,0,0.8);
     color: rgb(179,179,179);
@@ -432,6 +434,7 @@ ul.halfer-projects > li:last-child > .project-info-two-liner {
     display: block;
     color: rgb(179,179,179);
     font-size: 1.25em;
+    text-align: center;
     text-decoration: none;
     padding: 27px;
     margin: 0;
@@ -491,11 +494,11 @@ ul.halfer-projects > li:last-child > .project-info-two-liner {
   footer {
     width: 100%;
     text-align: right;
-    padding: 10px 20px 0 20px;
+    padding: 10px 15px 0 15px;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 769px) {
   a.nav-drawer {
     display: none;
   }
@@ -506,10 +509,16 @@ ul.halfer-projects > li:last-child > .project-info-two-liner {
 
   ul.desktop {
     display: block;
+    width: 400px;
   }
 
   ul.projects > li {
-    width: 33.33334%;
+    width: 33.3334%;
+    height: 320px;
+  }
+
+  ul.projects > li.halfer {
+    width: 33.3334%;
     height: 320px;
   }
 
