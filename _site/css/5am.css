@@ -498,7 +498,7 @@ ul.halfer-projects > li:last-child > .project-info-two-liner {
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 900px) {
   a.nav-drawer {
     display: none;
   }
