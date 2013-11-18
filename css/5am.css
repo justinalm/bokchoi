@@ -255,6 +255,17 @@ ul.projects > li {
   margin: 0;
 }
 
+ul.projects > li .project-image {
+  visibility: hidden;
+  margin: -20px;
+  width: 100%;
+  height: auto;
+}  
+
+ul.projects > li:hover .project-image {
+   visibility: visible;
+}  
+
 ul.projects > li.halfer {
   padding: 0;
 }
