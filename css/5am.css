@@ -364,7 +364,7 @@ ul.halfer-projects > li:last-child > .project-info-two-liner {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 680px) {
   header {
     height: 80px;
     padding: 0;
@@ -432,6 +432,10 @@ ul.halfer-projects > li:last-child > .project-info-two-liner {
     height: 190px;
   }
 
+  ul.projects >  li.click-tablet {
+    width: 100%;
+  }
+
   ul.halfer-projects > li:first-child > .project-info,
   ul.halfer-projects > li:last-child > .project-info {
     width: 100%;
@@ -475,7 +479,7 @@ ul.halfer-projects > li:last-child > .project-info-two-liner {
   }
 }
 
-@media only screen and (min-width: 835px) {
+@media only screen and (min-width: 900px) {
   a.nav-drawer {
     display: none;
   }
@@ -493,6 +497,10 @@ ul.halfer-projects > li:last-child > .project-info-two-liner {
     height: 320px;
   }
 
+  ul.projects >  li.click-tablet {
+    width: 33.3334%;
+  }
+
   .project-info {
     top: 40%; 
   }
@@ -506,7 +514,7 @@ ul.halfer-projects > li:last-child > .project-info-two-liner {
   ul.halfer-projects > li:first-child > .project-info-two-liner,
   ul.halfer-projects > li:last-child > .project-info-two-liner {
     position: absolute;
-    top: 35%;
+    top: 32%;
   }
   
   /*About Page Styles*/
