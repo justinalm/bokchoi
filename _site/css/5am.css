@@ -274,7 +274,7 @@ ul.projects > li:hover > a > .project-image {
 
 ul.projects > li > a > .project-info {
   position: absolute;
-  top: 0%;
+  top: 40%;
   left: 0%;
   height: auto;
   width: 100%;
@@ -422,7 +422,7 @@ ul.projects > li > a > .project-info {
 
   ul.projects > li {
     float: left;
-    width: 33.3334%;
+    width: 50%;
   }
 
   /*About Page Styles*/
@@ -459,6 +459,11 @@ ul.projects > li > a > .project-info {
   ul.desktop {
     display: block;
     width: 400px;
+  }
+
+  ul.projects > li {
+    float: left;
+    width: 33.3334%;
   }
   
   /*About Page Styles*/
