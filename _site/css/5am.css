@@ -251,71 +251,36 @@ ul.projects > li {
   float: left;
   position: relative;
   width: 100%;
-  padding: 20px;
   margin: 0;
 }
 
-ul.projects > li .project-image {
-  visibility: hidden;
-  margin: -20px;
+ul.projects > li > a {
+  float: left;
+  position: relative;
   width: 100%;
   height: auto;
-}  
-
-ul.projects > li:hover .project-image {
-   visibility: visible;
-}  
-
-ul.projects > li.halfer {
-  padding: 0;
-}
-
-ul.halfer-projects {
-  float: left;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  list-style: none;
-  padding: 0 0 0 0;
   margin: 0;
 }
 
-ul.halfer-projects > li {
-  float: left;
-  position: relative;
+ul.projects > li > a > .project-image {
+  visibility: hidden;
   width: 100%;
-  padding: 20px;
+  height: 100%;
 }
 
-ul.halfer-projects > li:first-child {
-  height: 50%;
+ul.projects > li:hover > a > .project-image {
+  visibility: visible;
 }
 
-ul.halfer-projects > li:last-child {
-  height: 50%;
-  top: 0;
-}
-
-.project-info {
+ul.projects > li > a > .project-info {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: auto;
   width: 100%;
-  left: 0;
-  padding: 0 10%;
-}
-
-ul.halfer-projects > li:first-child > .project-info,
-ul.halfer-projects > li:last-child > .project-info {
-  width: 100%;
-  left: 0;
-  padding: 0 10%;
-  top: 35%;
-}
-
-ul.halfer-projects > li:first-child > .project-info-two-liner,
-ul.halfer-projects > li:last-child > .project-info-two-liner {
-  width: 100%;
-  left: 0;
-  padding: 0 10%;
-  top: 28%;
+  color: rgb(255,255,255);
+  margin: auto;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
 }
 
 /* These are the styles for our colourful backgrounds */
@@ -457,34 +422,7 @@ ul.halfer-projects > li:last-child > .project-info-two-liner {
 
   ul.projects > li {
     float: left;
-    width: 50%;
-    height: 190px;
-  }
-
-  ul.projects >  li.click-tablet {
-    width: 100%;
-  }
-
-  ul.halfer-projects > li:first-child > .project-info,
-  ul.halfer-projects > li:last-child > .project-info {
-    width: 100%;
-    left: 0;
-    padding: 0 10%;
-    top: 25%;
-  }
-
-  ul.halfer-projects > li:first-child > .project-info-two-liner,
-  ul.halfer-projects > li:last-child > .project-info-two-liner {
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: -10px 0 0 0;
-  }
-
-  .project-info {
-    position: absolute;
-    top: 35%;
+    width: 33.3334%;
   }
 
   /*About Page Styles*/
@@ -521,36 +459,6 @@ ul.halfer-projects > li:last-child > .project-info-two-liner {
   ul.desktop {
     display: block;
     width: 400px;
-  }
-
-  ul.projects > li {
-    width: 33.3334%;
-    height: 320px;
-  }
-
-  ul.projects > li.halfer {
-    width: 33.3334%;
-    height: 320px;
-  }
-
-  ul.projects >  li.click-tablet {
-    width: 33.3334%;
-  }
-
-  .project-info {
-    top: 40%; 
-  }
-
-  ul.halfer-projects > li:first-child > .project-info,
-  ul.halfer-projects > li:last-child > .project-info {
-    position: absolute;
-    top: 35%;
-  }
-
-  ul.halfer-projects > li:first-child > .project-info-two-liner,
-  ul.halfer-projects > li:last-child > .project-info-two-liner {
-    position: absolute;
-    top: 32%;
   }
   
   /*About Page Styles*/
