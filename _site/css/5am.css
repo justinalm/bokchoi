@@ -65,6 +65,8 @@ body {
     font-weight: 300;
 }
 
+/* Header and Navigation */
+
 header {
   background-color: rgb(0,0,0);
   color: rgb(255,255,255);
@@ -108,7 +110,7 @@ ul.mobile > li {
   display: table;
   position: relative;
   width: 100%;
-  height: 33.3333%;
+  height: 33.3334%;
   list-style: none;
   background: rgba(0,0,0,0.85);
   color: rgb(179,179,179);
@@ -185,8 +187,14 @@ color: #fff;
 background: rgb(0,159,137);
 }
 
+/* Typography */
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+h2 {
+  margin: 0 0 10px 0;
 }
 
 p {
@@ -280,7 +288,6 @@ ul.projects > li > a > .project-info {
   width: 100%;
   color: rgb(255,255,255);
   margin: auto;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
 }
 
 /* These are the styles for our colourful backgrounds */
@@ -314,6 +321,37 @@ ul.projects > li > a > .project-info {
 
 .pumkin-div {
   background: rgb(213,110,28);
+}
+
+/* About Page Styles */
+
+ul.experience-education {
+  float: left;
+  list-style: none;
+  padding: 0 0 5px 0;
+  margin: -20px 0 20px 0;
+  border-bottom: 1px solid rgb(160,160,160);
+}
+
+ul.experience-education > li {
+  float: left;
+  width: 100%;
+  margin: 0 0 15px 0;
+}
+
+ul.experience-education > li > .time,
+ul.experience-education > li > .experience {
+  float: left;
+  width: 100%;
+}
+
+p.green-text {
+  color: rgb(0, 159, 137);
+}
+
+.about-text {
+  float: left;
+  padding: 0 20px 20px 20px;
 }
 
 /* ==========================================================================
@@ -359,6 +397,14 @@ ul.projects > li > a > .project-info {
     float: left;
     width: 100%;
     margin: 80px 0 0 0;
+  }
+
+  .container {
+    padding: 0 72px;
+  }
+
+  .content-body {
+    padding: 40px 39px 35px 39px;
   }
 
   h1.logo-phone {
@@ -445,9 +491,30 @@ ul.projects > li > a > .project-info {
     text-align: right;
     padding: 10px 15px 0 15px;
   }
+
+  ul.experience-education {
+    margin: 0 0 20px 0;
+  }
+
+  ul.experience-education > li > .time {
+    width: 30%;
+  }
+
+  ul.experience-education > li > .experience {
+    width: auto;
+  }
 }
 
 @media only screen and (min-width: 900px) {
+
+  .container {
+    padding: 0 72px;
+  }
+
+  .content-body {
+    padding: 40px 72px 35px 72px;
+  }
+
   a.nav-drawer {
     display: none;
   }
@@ -474,6 +541,24 @@ ul.projects > li > a > .project-info {
   img.selfie {
     height: 350px;
     margin: 0 15% 0 0;
+  }
+
+  ul.experience-education {
+    padding: 0;
+    margin: -20px 0 0 0;
+    border-bottom: none;
+  }
+
+  ul.experience-education > li > .time {
+    width: 38%;
+  }
+
+  ul.experience-education > li > .experience {
+    width: 62%;
+  }
+
+  ul.experience-education > li > .experience p {
+    padding: 0 20% 0 0;
   }
 }
 
