@@ -100,6 +100,11 @@ a.nav-drawer {
   padding: 3px 2px 5px 5px;
 }
 
+.hamburger {
+  width: 26px;
+  height: auto;
+}
+
 ul.mobile{
   display: none;
   position: absolute;
@@ -215,9 +220,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 span.categories {
+  display: block;
   font-size: 0.75em;
-  font-style: italic;
-  margin: 0 0 0 20px;
+  margin: 10px 0 0 0;
 }
 
 h2.agency-role {
@@ -383,8 +388,8 @@ img.selfie {
 ul.experience-education {
   float: left;
   list-style: none;
-  margin: 0 0 20px 0;
-  padding: 0;
+  margin: 0 0 10px 0;
+  padding: 0 0 5px 0;
   border-bottom: 1px solid rgb(160,160,160);
 }
 
@@ -644,7 +649,7 @@ footer p {
   }
 
   ul.experience-education {
-    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
   }
 
   ul.experience-education > li > .time {
@@ -719,6 +724,13 @@ footer p {
 
   ul.experience-education > li > .experience {
     width: 62%;
+  }
+
+  /* Project Page Styles */
+  span.categories {
+    display: inline-block;
+    font-size: 0.75em;
+    margin: 0 0 0 20px;
   }
 }
 
