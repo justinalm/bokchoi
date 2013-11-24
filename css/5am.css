@@ -36,6 +36,8 @@ hr {
 
 img {
     vertical-align: middle;
+    width: 100%;
+    height: auto;
 }
 
 fieldset {
@@ -189,12 +191,36 @@ background: rgb(0,159,137);
 
 /* Typography */
 
+a {
+  color: rgb(0,159,137);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(229, 95, 82);
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
   margin: 0;
 }
 
-h2 {
+span.categories {
+  font-size: 0.75em;
+  font-style: italic;
+  margin: 0 0 0 20px;
+}
+
+h2.agency-role {
+  color: rgb(94, 94, 94);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+a.agency {
+  display: block;
   margin: 0 0 10px 0;
 }
 
@@ -205,7 +231,7 @@ h2 {
 }
 
 p {
-  margin: 0;
+  margin: 0 0 15px 0;
 }
 
 footer {
@@ -238,6 +264,8 @@ footer p {
 
 .twitter-icon {
   margin: -6px 0 0 6px;
+  width: 26px;
+  height: auto;
 }
 
 /*About Page Styles*/
@@ -251,6 +279,7 @@ footer p {
 
 img.selfie {
   height: 215px;
+  width: auto;
 }
 
 /* Projects List Styling*/
@@ -368,6 +397,7 @@ ul.experience-education > li > .experience {
 
 p.green-text {
   color: rgb(0, 159, 137);
+  margin: 0;
 }
 
 .about-text {
@@ -649,6 +679,7 @@ p.green-text {
 
   ul.experience-education > li > .experience p {
     padding: 0 20% 0 0;
+    margin: 0;
   }
 }
 
