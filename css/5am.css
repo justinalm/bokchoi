@@ -522,6 +522,14 @@ footer p {
           background: url(../img/5am-logo-footer@2x.png) no-repeat;
           background-size: 44px 22px;
         }
+        .twitter-icon {
+          background: url(/img/twitter-logo-footer@2x.png);
+          background-size: 26px 21px;
+        }
+        .twitter-icon:hover {
+          background: url(/img/twitter-logo-footer-hover@2x.png);
+          background-size: 26px 21px;
+        }
       }
 
 /* ==========================================================================
