@@ -496,7 +496,15 @@ p.green-text {
     height: 160px;
   }
 
-  ul.projects > li > a.half > .project-info {
+  ul.projects > li > a.half > .project-info.two-line {
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    margin: 40px 0 0 0;
+  }
+
+    ul.projects > li > a.half > .project-info.three-line {
     width: 100%;
     text-align: center;
     top: 0;
