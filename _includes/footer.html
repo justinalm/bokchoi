@@ -50,6 +50,12 @@
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
-        
+        <script>
+          $('a').on('click touchend', function(e) {
+              var el = $(this);
+              var link = el.attr('href');
+              window.location = link;
+          });
+        </script>
     </body>
 </html>

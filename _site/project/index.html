@@ -107,8 +107,8 @@
 
   <div class="row">
     <div class="col-xs-12 centered">
-      <a class="btn previous" href="/project/" title="Name of project linked to">&#xffe9;&nbsp;Previous</a>
-      <a class="btn next" href="/project/" title="Name of project linked to">Next&nbsp;&#xffeb;</a>
+      <a class="btn previous" href="/project/" title="Name of project linked to">&#8592;&nbsp;Previous</a>
+      <a class="btn next" href="/project/" title="Name of project linked to">Next&nbsp;&#8594;</a>
     </div>
   </div>
   
@@ -166,6 +166,12 @@
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
-        
+        <script>
+          $('a').on('click touchend', function(e) {
+              var el = $(this);
+              var link = el.attr('href');
+              window.location = link;
+          });
+        </script>
     </body>
 </html>
