@@ -219,6 +219,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+/* Project Page Type Styles */
+
+.project-title {
+  padding: 20px 10px 15px 10px;
+}
+
 span.categories {
   display: block;
   font-size: 0.6em;
@@ -442,8 +448,9 @@ h2.agency-role {
 }
 
 .bottom-description p:first-child {
-  border-top: 1px solid rgb(242,242,242);
-  padding: 10px 0 0 0;
+  border-top: 1px solid rgb(160,160,160);
+  padding: 20px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 /* Footer Styles */
@@ -677,6 +684,10 @@ footer p {
     width: auto;
   }
 
+  .project-title {
+    padding: 0 10px 0px 10px;
+  }
+
   .rule {
     display: block;
     padding: 0 10px;
@@ -769,6 +780,10 @@ footer p {
   }
 
   /* Project Page Styles */
+  .project-title {
+    padding: 0 20px 0px 20px;
+  }
+
   span.categories {
     display: inline-block;
     font-size: 0.75em;
