@@ -492,6 +492,18 @@ p.green-text {
     width: 50%;
   }
 
+  ul.projects > li.click-tablet {
+    float: left;
+    width: 100%;
+  }
+
+  ul.projects > li.click-tablet > a > .project-image {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: -20% 0;
+  }
+
   ul.projects > li > a.half {
     height: 160px;
   }
@@ -527,7 +539,7 @@ p.green-text {
   ul.projects > li > a > .project-image {
     width: auto;
     height: 100%;
-    margin: 0 0;
+    margin: 0;
   }
 
   ul.projects > li > a.half > .project-image {
@@ -597,7 +609,20 @@ p.green-text {
     float: left;
     width: 33.3334%;
   }
-  
+
+  ul.projects > li.click-tablet {
+    float: left;
+    width: 33.3334%;
+  }
+
+  ul.projects > li.click-tablet > a > .project-image {
+    float: left;
+    width: auto;
+    height: 100%;
+    margin: 0;
+  } 
+
+
   /*About Page Styles*/
   .about-banner {
     height: 350px;
