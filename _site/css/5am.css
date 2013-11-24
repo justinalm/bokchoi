@@ -201,6 +201,10 @@ a:hover {
   text-decoration: none;
 }
 
+.centered {
+  text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
   margin: 0;
@@ -234,52 +238,27 @@ p {
   margin: 0 0 15px 0;
 }
 
-footer {
-  float: left;
-  position: relative;
-  width: 100%;
-  color: rgb(255,255,255);
-  background-color: rgb(0,0,0);
-  height: 44px;
-  text-transform: uppercase;
+a.btn {
+  display: inline-block;
+  width: 112px;
+  color: rgb(80,80,80);
+  background: rgb(242, 242, 242);
+  border-radius: 5px;
   text-align: center;
-  padding: 10px 0 0 0;
+  padding: 15px 0;
 }
 
-h2.footer-logo {
-  display: none;
-  float: left;
-  overflow: hidden;
+a.btn:hover {
   color: rgb(255,255,255);
-  text-indent: -9999;
-  height: 22px;
-  width: 44px;
-  background: url(../img/5am-logo-footer.png) no-repeat;
-  background-size: 44px 22px;
+  background: rgb(229, 95, 82);
 }
 
-footer p {
-  margin: 0;
+a.btn.previous {
+  margin: 0 5px 0 0;
 }
 
-.twitter-icon {
-  margin: -6px 0 0 6px;
-  width: 26px;
-  height: auto;
-}
-
-/*About Page Styles*/
-.about-banner {
-  display: block;
-  width: 100%;
-  height: 215px;
-  background: rgb(240,154,185);
-  text-align: center;
-}
-
-img.selfie {
-  height: 215px;
-  width: auto;
+a.btn.next {
+  margin: 0 0 0 5px;
 }
 
 /* Projects List Styling*/
@@ -374,6 +353,18 @@ ul.projects > li > a > .project-info > h2 {
 }
 
 /* About Page Styles */
+.about-banner {
+  display: block;
+  width: 100%;
+  height: 215px;
+  background: rgb(240,154,185);
+  text-align: center;
+}
+
+img.selfie {
+  height: 215px;
+  width: auto;
+}
 
 ul.experience-education {
   float: left;
@@ -403,6 +394,41 @@ p.green-text {
 .about-text {
   float: left;
   padding: 0 20px 20px 20px;
+}
+
+/* Footer Styles */
+footer {
+  float: left;
+  position: relative;
+  width: 100%;
+  color: rgb(255,255,255);
+  background-color: rgb(0,0,0);
+  height: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+h2.footer-logo {
+  display: none;
+  float: left;
+  overflow: hidden;
+  color: rgb(255,255,255);
+  text-indent: -9999;
+  height: 22px;
+  width: 44px;
+  background: url(../img/5am-logo-footer.png) no-repeat;
+  background-size: 44px 22px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.twitter-icon {
+  margin: -6px 0 0 6px;
+  width: 26px;
+  height: auto;
 }
 
 /* ==========================================================================
