@@ -149,6 +149,7 @@ ul.mobile > li:first-child > a {
   height: 100%;
   width: 100%;
   background: rgb(242,242,242);
+  border-radius: 5px;
 }
 
 ul.mobile > li:first-child > a:hover {
