@@ -260,7 +260,7 @@ a.btn {
   display: inline-block;
   width: 112px;
   color: rgb(80,80,80);
-  background: rgb(242, 242, 242);
+  background: rgb(235,235,235);
   border-radius: 5px;
   text-align: center;
   padding: 15px 0;
@@ -483,9 +483,21 @@ footer p {
 }
 
 .twitter-icon {
+  display: inline-block;
+  background: url(/img/twitter-logo-footer@2x.png);
+  background-size: 26px 21px;
   margin: -6px 0 0 6px;
   width: 26px;
-  height: auto;
+  height: 21px;
+}
+
+.twitter-icon:hover {
+  display: inline-block;
+  background: url(/img/twitter-logo-footer-hover@2x.png);
+  background-size: 26px 21px;
+  margin: -6px 0 0 6px;
+  width: 26px;
+  height: 21px;
 }
 
 /* ==========================================================================
