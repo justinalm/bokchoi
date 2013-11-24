@@ -273,28 +273,42 @@ ul.projects > li > a {
   float: left;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 120px;
   margin: 0;
+  overflow: hidden;
 }
 
-ul.projects > li > a > .project-image {
+ul.projects > li > a > project-image,
+ul.projects > li > a.half > project-image {
+  width: 100%;
+  height: auto;
+}
+
+a > .project-image,
+a.half > .project-image {
   visibility: hidden;
   width: 100%;
-  height: 100%;
+  height: auto;
+  margin: -25% 0;
 }
 
-ul.projects > li:hover > a > .project-image {
+a:hover > .project-image,
+a.half:hover > .project-image {
   visibility: visible;
 }
 
 ul.projects > li > a > .project-info {
   position: absolute;
-  top: 40%;
-  left: 0%;
-  height: auto;
-  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  text-align: left;
   color: rgb(255,255,255);
-  margin: auto;
+}
+
+ul.projects > li > a > .project-info > h2 {
+  margin: 0;
 }
 
 /* These are the styles for our colourful backgrounds */
@@ -476,6 +490,42 @@ p.green-text {
   ul.projects > li {
     float: left;
     width: 50%;
+  }
+
+  ul.projects > li > a.half {
+    height: 160px;
+  }
+
+  ul.projects > li > a.half > .project-info {
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    margin: 25px 0 0 0;
+  }
+
+  ul.projects > li > a {
+    height: 320px;
+  }
+
+  ul.projects > li > a > .project-info {
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    margin: 100px 0 0 0;
+  }
+
+  ul.projects > li > a > .project-image {
+    width: auto;
+    height: 100%;
+    margin: 0 0;
+  }
+
+  ul.projects > li > a.half > .project-image {
+    width: 100%;
+    height: auto;
+    margin: -10% auto;
   }
 
   /*About Page Styles*/
