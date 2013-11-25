@@ -501,6 +501,28 @@ footer p {
   height: 21px;
 }
 
+/* FitVids.js Responsive Video Style */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe,
+embed,
+object {
+  max-width: 100%;
+}
+
+.vendor {
+  background: rgb(160,160,160);
+  margin: 0;
+  padding: 0;
+}
+
+.unsupported {
+  background: rgb(160,160,160);
+}
+
 /* ==========================================================================
   Retina CSS
   ========================================================================== */

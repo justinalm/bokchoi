@@ -142,6 +142,9 @@
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
         
         <script type="text/javascript">
           $(document).ready(function(){
@@ -153,8 +156,12 @@
           });
         </script>
 
-        <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
+         <script>
+          // Basic FitVids Test
+          $(".vendor").fitVids();
+          // Custom selector and No-Double-Wrapping Prevention Test
+          $(".vendor").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
+        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

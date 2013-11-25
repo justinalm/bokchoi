@@ -52,14 +52,14 @@
 
     <li>
       <a class="light-blue-div half" href="/project/" title="Name of project">
-        <img class="project-image" src="/img/1.jpg" />
+        <img class="project-image" src="/img/monocle1.jpg" />
         <div class="project-info two-line">
             <h2>BC Hydro</h2>
             <p>Annual Report</p>
         </div>
       </a>
       <a class="green-div half" href="/project/" title="Name of project">
-        <img class="project-image" src="/img/2.jpg" />
+        <img class="project-image" src="/img/monocle1.jpg" />
         <div class="project-info three-line">
               <h2>Kelty Mentail<br>Health Resource Centre</h2>
               <p>Illustration</p>
@@ -69,7 +69,7 @@
 
     <li>
       <a class="dark-blue-div" href="/project/" title="Name of project">
-        <img class="project-image" src="/img/3.jpg" />
+        <img class="project-image" src="/img/monocle1.jpg" />
         <div class="project-info two-line">
           <h2>BC Transplant</h2>
           <p>Campaign &amp; Animation</p>
@@ -79,7 +79,7 @@
 
     <li>
       <a class="light-pink-div" href="/project/" title="Name of project">
-        <img class="project-image" src="/img/4.jpg" />
+        <img class="project-image" src="/img/monocle1.jpg" />
         <div class="project-info two-line">
           <h2>Consume Less Work Less</h2>
           <p>Music Video</p>
@@ -88,7 +88,7 @@
     </li>
 
     <li>
-      <a class="pumkin-div" href="/project/" title="Name of project"><img class="project-image" src="/img/5.jpg" />
+      <a class="pumkin-div" href="/project/" title="Name of project"><img class="project-image" src="/img/monocle1.jpg" />
       <div class="project-info two-line">
         <h2>SHAWN: The #15 &amp; Extra Flank</h2>
         <p>Graphic Novel</p>
@@ -98,7 +98,7 @@
 
     <li>
       <a class="middle-blue-div" href="/project/" title="Name of project">
-        <img class="project-image" src="/img/6.jpg" />
+        <img class="project-image" src="/img/monocle1.jpg" />
         <div class="project-info two-line">
           <h2>BC Innovation Council</h2>
           <p>Branding, Website &amp; Illustration</p>
@@ -108,7 +108,7 @@
 
     <li>
       <a class="light-blue-div half" href="/project/" title="Name of project">
-        <img class="project-image" src="/img/7.jpg" />
+        <img class="project-image" src="/img/monocle1.jpg" />
         <div class="project-info two-line">
           <h2>Cummins Westport</h2>
           <p>Rebranding &amp; Website</p>
@@ -116,7 +116,7 @@
       </a>
 
       <a class="middle-pink-div half" href="/project/" title="Name of project">
-        <img class="project-image" src="/img/8.jpg" />
+        <img class="project-image" src="/img/monocle1.jpg" />
         <div class="project-info two-line">
           <h2>Vancouver 2030</h2>
           <p>Animation</p>
@@ -126,7 +126,7 @@
 
     <li>
       <a class="dark-pink-div half" href="/project/" title="Name of project">
-        <img class="project-image" src="/img/9.jpg" />
+        <img class="project-image" src="/img/monocle1.jpg" />
         <div class="project-info two-line">
           <h2>In the Fire of Conflict</h2>
           <p>Music Video</p>
@@ -134,7 +134,7 @@
       </a>
 
       <a class="green-div half" href="/project/" title="Name of project">
-        <img class="project-image" src="/img/10.jpg" />
+        <img class="project-image" src="/img/monocle1.jpg" />
         <div class="project-info two-line">
             <h2>A Pentool Lover</h2>
             <p>Illustration</p>
@@ -144,7 +144,7 @@
 
     <li>
       <a class="light-blue-div" href="/project/" title="Name of project">
-        <img class="project-image" src="/img/11.jpg" />
+        <img class="project-image" src="/img/monocle1.jpg" />
         <div class="project-info two-line">
           <h2>BC Mental Health<br>Substance Use &amp; Services</h2>
           <p>Website</p>
@@ -154,7 +154,7 @@
 
     <li class="click-tablet">
       <a class="dark-blue-div" href="/project/" title="Name of project">
-        <img class="project-image" src="/img/12.jpg" />
+        <img class="project-image" src="/img/monocle1.jpg" />
         <div class="project-info two-line">
           <h2>Click</h2>
           <p>Toy Design</p>
@@ -198,6 +198,9 @@
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
         
         <script type="text/javascript">
           $(document).ready(function(){
@@ -209,8 +212,12 @@
           });
         </script>
 
-        <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
+         <script>
+          // Basic FitVids Test
+          $(".vendor").fitVids();
+          // Custom selector and No-Double-Wrapping Prevention Test
+          $(".vendor").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
+        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
