@@ -65,15 +65,24 @@ textarea {
 body {
     font: 16px/26px "proxima-nova", Helvetica, Arial;
     font-weight: 300;
+    background: #E5E5E5;
 }
 
 .content-body {
   padding: 10px 0px;
 }
 
-/* Header and Navigation */
+article {
+  float: left;
+  width: 100%;
+  margin: 50px 0 0 0;
+}
 
+/* Header and Navigation */
 header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
   background-color: rgb(0,0,0);
   color: rgb(255,255,255);
   height: 50px;
@@ -97,7 +106,21 @@ h1.logo-tablet-desktop {
 
 a.nav-drawer {
   float: right;
-  padding: 3px 2px 5px 5px;
+  position: relative;
+  width: 26px;
+  height: 20px;
+  background: url(../img/nav-button.png) 0 0 no-repeat;
+  background-size: 26px 40px;
+  top: 7px;
+  right: 7px;
+}
+
+a.nav-drawer:hover {
+  float: right;
+  width: 26px;
+  height: 20px;
+  background: url(../img/nav-button.png) 0 -20px no-repeat;
+  background-size: 26px 40px;
 }
 
 .hamburger {
@@ -107,13 +130,13 @@ a.nav-drawer {
 
 ul.mobile{
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   margin: 0;
   padding: 0;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 101%;
   width: 100%;
 }
 
@@ -121,39 +144,42 @@ ul.mobile > li {
   display: table;
   position: relative;
   width: 100%;
-  height: 33.3334%;
+  height: 33.4%;
   list-style: none;
   background: rgba(0,0,0,0.85);
   color: rgb(179,179,179);
   text-decoration: none;
-  border-bottom: 1px solid rgb(80,80,80);
 }
 
 ul.mobile > li:first-child {
-  display: block;
+  float: right;
   position: absolute;
-  z-index: 100000;
-  top: 0;
-  right: 0;
-  height: auto !important;
-  width: auto !important;
-  list-style: none;
+  z-index: 9999;
+  width: 26px;
+  height: 20px;
+  top: 8px;
+  right: 8px;
   background: transparent;
-  border-bottom: none;
 }
 
 ul.mobile > li:first-child > a {
-  display: block;
-  padding: 8px 10px 18px 10px;
-  margin: 0 0 5px 5px;
-  height: 100%;
-  width: 100%;
-  background: rgb(242,242,242);
-  border-radius: 5px;
+  float: right;
+  width: 26px;
+  height: 20px;
+  background: url(../img/nav-button.png) 0 0 no-repeat;
+  background-size: 26px 40px;
+  top: 7px;
+  right: 9px;
 }
 
 ul.mobile > li:first-child > a:hover {
-  background: transparent;
+  float: right;
+  width: 26px;
+  height: 20px;
+  background: url(../img/nav-button.png) 0 -20px no-repeat;
+  background-size: 26px 40px;
+  top: 7px;
+  right: 9px;
 }
 
 
@@ -213,6 +239,7 @@ a:hover {
 
 .centered {
   text-align: center;
+  padding: 10px 0 20px 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -220,8 +247,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-/* Project Page Type Styles */
+h1 {
+  font-size: 33px;
+}
 
+/* Project Page Type Styles */
 .project-title {
   padding: 20px 10px 15px 10px;
 }
@@ -229,6 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 span.categories {
   display: block;
   font-size: 0.6em;
+  color: #999999;
   margin: 10px 0 0 0;
 }
 
@@ -238,13 +269,18 @@ a.agency {
 }
 
 .experience-education h2 {
-  color: rgb(94, 94, 94);
-  font-size: 1em;
+  font-size: 15px;
+  color: rgb(153, 153, 153);
+  font-weight: 400;
+  margin: 0 0 10px 0;
   text-transform: uppercase;
 }
 
 p {
+  font-size: 18px;
+  line-height: 27px;
   margin: 0 0 15px 0;
+
 }
 
 p:last-child {
@@ -261,10 +297,9 @@ a.btn {
   display: inline-block;
   width: 112px;
   color: rgb(80,80,80);
-  background: rgb(235,235,235);
-  border-radius: 5px;
+  background: #D4D4D4;
   text-align: center;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 a.btn:hover {
@@ -329,10 +364,20 @@ ul.projects > li > a > .project-info {
   z-index: 1;
   top: 0;
   left: 0;
+  width: 100%;
   padding: 20px;
-  text-align: left;
+  text-align: center;
   color: rgb(255,255,255);
 }
+
+ul.projects > li > a > .project-info {
+  padding: 37px 10px;
+}
+
+ul.projects > li > a > .project-info.three-line {
+  padding: 23px 10px;
+}
+
 
 ul.projects > li > a > .project-info > h2 {
   margin: 0;
@@ -372,6 +417,10 @@ ul.projects > li > a > .project-info > h2 {
 }
 
 /* About Page Styles */
+h1.about {
+  margin: 10px 0 0 0;
+}
+
 .about-banner {
   display: block;
   width: 100%;
@@ -417,6 +466,7 @@ ul.experience-education > li > .experience p {
 
 .about-text {
   float: left;
+  padding: 10px;
 }
 
 /* Project Page Style */
@@ -429,13 +479,14 @@ ul.experience-education > li > .experience p {
 hr {
   border: 0;
   height: 0;
-  border-top: 0px solid rgb(160,160,160);
-  border-bottom: 1px solid rgb(160,160,160);
+  border-top: 0px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
 }
 
 h2.agency-role {
-  color: rgb(94, 94, 94);
-  font-size: 1em;
+  color: #999999;
+  font-size: 15px;
+  font-weight: 400;
   text-transform: uppercase;
   margin: 0;
 }
@@ -477,28 +528,30 @@ h2.footer-logo {
   width: 44px;
   background: url(../img/5am-logo-footer.png) no-repeat;
   background-size: 44px 22px;
+  margin: 2px 0 0 0;
 }
 
 footer p {
   margin: 0;
+  font-size: 14px;
 }
 
 .twitter-icon {
   display: inline-block;
-  background: url(/img/twitter-logo-footer@2x.png);
-  background-size: 26px 21px;
-  margin: -6px 0 0 6px;
   width: 26px;
   height: 21px;
+  background: url(/img/twitter-logo-footer@2x.png) 0 0 no-repeat;
+  background-size: 26px 42px;
+  margin: -6px 0 0 6px;
 }
 
 .twitter-icon:hover {
   display: inline-block;
-  background: url(/img/twitter-logo-footer-hover@2x.png);
-  background-size: 26px 21px;
-  margin: -6px 0 0 6px;
   width: 26px;
   height: 21px;
+  background: url(/img/twitter-logo-footer@2x.png) 0 -21px no-repeat;
+  background-size: 26px 42px;
+  margin: -6px 0 0 6px;
 }
 
 /* FitVids.js Responsive Video Style */
@@ -540,17 +593,21 @@ object {
             background: url(../img/5am-logo-tablet-desktop@2x.png) no-repeat;
             background-size: 102px 48px;
         }
+        a.nav-drawer {
+          background: url(../img/nav-button@2x.png) no-repeat;
+          background-size: 26px 40px;
+        }
+        ul.mobile > li:first-child > a {
+          background: url(../img/nav-button@2x.png) no-repeat;
+          background-size: 26px 40px;
+        }
         h2.footer-logo {
           background: url(../img/5am-logo-footer@2x.png) no-repeat;
           background-size: 44px 22px;
         }
         .twitter-icon {
           background: url(/img/twitter-logo-footer@2x.png);
-          background-size: 26px 21px;
-        }
-        .twitter-icon:hover {
-          background: url(/img/twitter-logo-footer-hover@2x.png);
-          background-size: 26px 21px;
+          background-size: 26px 42px;
         }
       }
 
@@ -558,26 +615,18 @@ object {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 600px) {
   header {
-    position: fixed;
-    z-index: 999;
-    width: 100%;
     height: 80px;
     padding: 0;
-    -moz-box-shadow:    0px 1px 1px rgba(0,0,0,0.2);
-    -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
-    box-shadow:         0px 1px 1px rgba(0,0,0,0.2);
   }
 
   article {
-    float: left;
-    width: 100%;
     margin: 80px 0 0 0;
   }
 
   .container {
-    padding: 0 72px;
+    padding: 0;
   }
 
   .content-body {
@@ -612,7 +661,6 @@ object {
   ul.desktop {
     display: block;
     float: right;
-    width: 50%;
     margin: 0;
     padding: 0;
   }
@@ -620,7 +668,6 @@ object {
   ul.desktop > li {
     float: left;
     display: inline-block;
-    width: 33.3334%;
     list-style: none;
     background: rgba(0,0,0,0.8);
     color: rgb(179,179,179);
@@ -632,9 +679,11 @@ object {
   ul.desktop > li > a {
     display: block;
     color: rgb(179,179,179);
-    font-size: 1.25em;
+    font-size: 17px;
+    font-weight: 400;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     padding: 27px;
     margin: 0;
   }
@@ -657,7 +706,7 @@ object {
     float: left;
     width: 100%;
     height: auto;
-    margin: -20% 0;
+    margin: 0;
   }
 
   ul.projects > li > a.half {
@@ -669,7 +718,7 @@ object {
     text-align: center;
     top: 0;
     left: 0;
-    margin: 40px 0 0 0;
+    margin: 20px 0 0 0;
   }
 
   ul.projects > li > a.half > .project-info.three-line {
@@ -693,18 +742,21 @@ object {
   }
 
   ul.projects > li > a > .project-image {
-    width: auto;
-    height: 100%;
+    width: 160%;
+    height: auto;
     margin: 0;
   }
 
   ul.projects > li > a.half > .project-image {
     width: 100%;
     height: auto;
-    margin: -10% auto;
+    margin: 0;
   }
 
   /*About Page Styles*/
+  h1.about {
+    margin: 0;
+  }
   .about-banner {
     height: 250px;
     text-align: right;
@@ -716,17 +768,30 @@ object {
   }
 
   ul.experience-education {
-    padding: 0 0 20px 0;
+    padding: 0 0 25px 0;
+    margin: 0 0 15px 0;
   }
 
   ul.experience-education > li > .time {
-    width: 30%;
+    width: 28%;
   }
 
   ul.experience-education > li > .experience {
-    width: auto;
+    width: 72%;
+    padding: 0;
   }
 
+  ul.experience-education > li > .experience p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-text {
+    padding: 0 10px;
+  }
+
+
+  /* Project Styles */
   .project-title {
     padding: 0 10px 0px 10px;
   }
@@ -745,7 +810,6 @@ object {
   }
 
   /* Footer Styles */
-
   h2.footer-logo {
     display: block;
   }
@@ -777,7 +841,6 @@ object {
 
   ul.desktop {
     display: block;
-    width: 400px;
   }
 
   ul.projects > li {
@@ -792,8 +855,8 @@ object {
 
   ul.projects > li.click-tablet > a > .project-image {
     float: left;
-    width: auto;
-    height: 100%;
+    width: 160%;
+    height: auto;
     margin: 0;
   } 
 
@@ -815,16 +878,17 @@ object {
   }
 
   ul.experience-education > li > .time {
-    width: 38%;
+    width: 40%;
   }
 
   ul.experience-education > li > .experience {
-    width: 62%;
+    width: 60%;
+    padding: 0;
   }
 
   /* Project Page Styles */
   .project-title {
-    padding: 0 20px 0px 20px;
+    padding: 20px 20px 0px 20px;
   }
 
   span.categories {
