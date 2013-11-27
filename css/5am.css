@@ -647,7 +647,7 @@ object {
     width: 102px;
     background: url(../img/5am-logo-tablet-desktop.png) no-repeat;
     background-size: 102px 48px;
-    margin: 15px 0 0 15px;
+    margin: 15px 0 0 50px;
   }
 
   a.nav-drawer {
@@ -744,7 +744,7 @@ object {
   ul.projects > li > a > .project-image {
     width: 160%;
     height: auto;
-    margin: 0;
+    margin: 0 -30%;
   }
 
   ul.projects > li > a.half > .project-image {
@@ -831,6 +831,10 @@ object {
     padding: 40px 72px 35px 72px;
   }
 
+  h1.logo-tablet-desktop {
+    margin: 15px 0 0 20px;
+  }
+
   a.nav-drawer {
     display: none;
   }
@@ -857,7 +861,7 @@ object {
     float: left;
     width: 160%;
     height: auto;
-    margin: 0;
+    margin: 0 -30%;
   } 
 
 
